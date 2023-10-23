@@ -1,40 +1,90 @@
-This theme is designed by Xiaoying Riley at 3rd Wave Media (http://themes.3rdwavemedia.com/). Visit her website for more themes [http://themes.3rdwavemedia.com/](http://themes.3rdwavemedia.com/)
+<a href="https://jekyll-themes.com">
+<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
+</a>
+
+# Orbit
+> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
+> Visit [her website](http://themes.3rdwavemedia.com/) for more themes.
+
+I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+
+<table>
+  <tr>
+    <th>Desktop</th>
+    <th>Mobile</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
+    </td>
+    <td>
+        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
+    </td>
+  </tr>
+</table>
+
+## Installation
+
+* [Fork](https://github.com/sharu725/online-cv/fork) the repository;
+* Go to settings and set master branch as Github Pages source;
+* Your new site should be ready at `https://<username>.github.io/online-cv/`;
+* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
+
+Change all the details from one place: `_data/data.yml`.
+
+### To preview/edit locally with docker
+
+```sh
+docker-compose up
+```
+
+*docker-compose.yml* file is used to create a container that is reachable under <http://localhost:4000>.
+Changes *_data/data.yml* will be visible after a while.
+
+### Local machine
+
+* Get the repo into your machine 
+
+```bash
+git clone https://github.com/sharu725/online-cv.git
+```
+
+* Install required ruby gems
+
+```bash
+bundle install
+```
+
+* Serve the site locally
+
+```bash
+bundle exec jekyll serve
+```
+
+* Navigate to `http://localhost:4000`
 
 
-I have made this into a Jekyll Theme.
-**Demo:** [http://webjeda.com/online-cv/](http://webjeda.com/online-cv/)
+## Skins
 
-The default theme would look like this
+There are 6 color schemes available:
 
-![online cv Jekyll theme](/assets/images/online-cv-jekyll-theme.png)
+| Blue | Turquoise | Green |
+|---------|---------|---------|
+| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
 
-The theme is responsive
+| Berry | Orange | Ceramic |
+|---------|---------|---------|
+| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
 
-![online cv responsive Jekyll theme](/assets/images/online-cv-responsive-jekyll-theme.png)
+## Credits
 
-There are 6 color schemes available
+Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
 
-![online cv Jekyll theme](/assets/images/online-cv-jekyll-theme-2.png)
+Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
 
-# Installation: 
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
+Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
 
-[Watch my video on instlallation](https://www.youtube.com/embed/T2nx6tj-ZH4)
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
 
-## How to delete old **gh-pages** branch?
-After forking the repository, click on **branches**.
-
-![delete gh-pages branch](http://blog.webjeda.com/images/delete-github-branch.png)
-
-Delete ``gh-pages`` branch.
-![delete gh-pages branch](http://blog.webjeda.com/images/delete-github-branch-2.png)
-
-You have to create a new ``gh-pages`` branch using the master branch. Go back to the forked repository and create ``gh-pages`` branch.
-
-![create gh-pages branch](http://blog.webjeda.com/images/create-gh-pages-branch.JPG)
-
-Now, go to settings and check the **Github Pages** section. You should see a URL where the blog is hosted. If not select a branch as source.
-
-
-Check out for more themes: [**Jekyll Themes**](http://blog.webjeda.com/jekyll-themes)
